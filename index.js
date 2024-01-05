@@ -14,7 +14,7 @@ tl.to(".popup-background", {
   .to(".popup-background__img", { position: "fixed", zIndex: "300" }, ">")
   .from(".popup-background__img", { opacity: 0, y: 10 });
 
-class PopupManager {
+export class PopupManager {
   constructor(numberOfPopups) {
     this.numberOfPopups = numberOfPopups;
     this.setupPopups();
