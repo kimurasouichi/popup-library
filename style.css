@@ -1,0 +1,18 @@
+.popup-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0000009c;
+}
+
+.popup-background__img {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  margin: 0 auto;
+}

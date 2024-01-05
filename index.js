@@ -1,3 +1,4 @@
+import "./style.css";
 import { gsap } from "gsap";
 
 // GSAPのタイムラインを初期化
