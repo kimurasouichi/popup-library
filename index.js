@@ -73,5 +73,3 @@ export class PopupManager {
 
 // 使用例
 // new PopupManager(5); // 5はポップアップの数
-
-module.exports = PopupManager;
