@@ -1,5 +1,5 @@
 import "./style.css";
-import { gsap } from "gsap";
+import { gsap } from "https://cdn.skypack.dev/gsap";
 
 // GSAPのタイムラインを初期化
 var tl = gsap.timeline({ paused: true });
