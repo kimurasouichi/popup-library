@@ -15,9 +15,9 @@
 
 npmを使用して `my-popup-lib` をプロジェクトに追加するには、以下のコマンドを実行してください。
 
-```bash
 npm install my-popup-lib
 
+```bash
 ## 使い方
 
 ### bodyタグ内に以下を配置
