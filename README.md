@@ -15,34 +15,30 @@
 
 npmを使用して `my-popup-lib` をプロジェクトに追加するには、以下のコマンドを実行してください。
 
-```bash
 npm install my-popup-lib
-使い方
-以下のコードスニペットを使用して my-popup-lib をあなたのプロジェクトに組み込むことができます。
 
-javascript
-Copy code
-import { PopupManager } from 'my-popup-lib';
+## 使い方
 
-// ポップアップマネージャーの初期化
-const popupManager = new PopupManager(5); // 5はポップアップの数を表します
+### bodyタグ内に以下を配置
+<div class="popup-background"></div>
+<div class="popup-background__img">
+    // 必要に応じて増やす
+    <img class="popup-image-container-1" src="">
+    <img class="popup-image-container-2" src="">
+    <img class="popup-icon circle-x" src="/circle-x.png" alt="">
+</div>
 
-// 必要なスタイルとアニメーションの設定を行ってください
-APIリファレンス
-PopupManager
-PopupManager クラスは、ポップアップの作成と管理を行います。
+### ポップアップさせるimgタグにpopup-triggerクラスを設定
+<img class="popup-trigger-1" src="https://picsum.photos/500/300?random=3" alt="">
+<img class="popup-trigger-1" src="https://picsum.photos/500/300?random=4" alt="">
+<img class="popup-trigger-1" src="https://picsum.photos/500/300?random=5" alt="">
+<img class="popup-trigger-1" src="https://picsum.photos/500/300?random=6" alt="">
 
-コンストラクタ
-javascript
-Copy code
-new PopupManager(numberOfPopups)
-numberOfPopups: 表示するポップアップの数
-メソッド
-setupPopups(): ポップアップの初期設定を行います。
-setupPopup(triggerClass, imageContainerSelector): 個別のポップアップの設定を行います。
-setupBackgroundClick(): バックグラウンドをクリックした時のイベントを設定します。
-カスタマイズ
-ポップアップのスタイルや動作はカスタマイズ可能です。CSSを編集することで、ポップアップの見た目を変更することができます。
+<img class="popup-trigger-2" src="https://picsum.photos/500/300?random=7" alt="">
+<img class="popup-trigger-2" src="https://picsum.photos/500/300?random=8" alt="">
+<img class="popup-trigger-2" src="https://picsum.photos/500/300?random=9" alt="">
+<img class="popup-trigger-2" src="https://picsum.photos/500/300?random=10" alt="">
+
 
 サポート
 このライブラリに関する質問やサポートが必要な場合は、GitHub Issuesを使用してください。
