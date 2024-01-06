@@ -39,3 +39,4 @@ npm install my-popup-lib
 <img class="popup-trigger-2" src="https://picsum.photos/500/300?random=9" alt="">
 <img class="popup-trigger-2" src="https://picsum.photos/500/300?random=10" alt="">
 
+## インポート
