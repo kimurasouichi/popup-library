@@ -20,6 +20,7 @@ export class PopupManager {
     this.numberOfPopups = numberOfPopups;
     this.setupPopups();
     this.setupBackgroundClick();
+    this.setupArrowClicks();
   }
 
   setupPopups() {
@@ -55,20 +56,31 @@ export class PopupManager {
   }
 
   setupBackgroundClick() {
+    // 共通のイベント処理を関数として定義
+    const handleBackgroundClick = () => {
+      tl.reverse();
+      tl.eventCallback("onReverseComplete", () => {
+        for (let i = 1; i <= this.numberOfPopups; i++) {
+          document
+            .querySelectorAll(".popup-image-container-" + i)
+            .forEach((img) => {
+              img.removeAttribute("src");
+            });
+        }
+      });
+    };
+
+    // .popup-backgroundにイベントリスナーを追加
     document
       .querySelector(".popup-background")
-      .addEventListener("click", () => {
-        tl.reverse();
-        tl.eventCallback("onReverseComplete", () => {
-          for (let i = 1; i <= this.numberOfPopups; i++) {
-            document
-              .querySelectorAll(".popup-image-container-" + i)
-              .forEach((img) => {
-                img.removeAttribute("src");
-              });
-          }
-        });
-      });
+      .addEventListener("click", handleBackgroundClick);
+
+    // .circle-xにも同じイベントリスナーを追加
+    document
+      .querySelectorAll(".circle-x")
+      .forEach((element) =>
+        element.addEventListener("click", handleBackgroundClick)
+      );
   }
 }
 
