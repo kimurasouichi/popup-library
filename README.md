@@ -38,5 +38,8 @@ npm install my-popup-lib
 <img class="popup-trigger-2" src="https://picsum.photos/500/300?random=8" alt="">
 <img class="popup-trigger-2" src="https://picsum.photos/500/300?random=9" alt="">
 <img class="popup-trigger-2" src="https://picsum.photos/500/300?random=10" alt="">
+```
 
-## インポート
+サポート
+このライブラリに関する質問やサポートが必要な場合は、GitHub Issuesを使用してください。
+
