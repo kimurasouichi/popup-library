@@ -1,5 +1,5 @@
-// import "./style.css";
-// import { gsap } from "gsap";
+import "./style.css";
+import { gsap } from "gsap";
 
 // GSAPのタイムラインを初期化
 var tl = gsap.timeline({ paused: true });
@@ -15,7 +15,7 @@ tl.to(".popup-background", {
   .to(".popup-background__img", { position: "fixed", zIndex: "300" }, ">")
   .from(".popup-background__img", { opacity: 0, y: 10 });
 
-class PopupManager {
+export class PopupManager {
   constructor(numberOfPopups) {
     this.numberOfPopups = numberOfPopups;
     this.setupPopups();
@@ -85,4 +85,4 @@ class PopupManager {
 }
 
 // 使用例
-new PopupManager(5); // 5はポップアップの数
+// new PopupManager(5); // 5はポップアップの数

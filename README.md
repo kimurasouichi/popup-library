@@ -41,5 +41,5 @@ npm install my-popup-lib
 ```
 
 サポート
-このライブラリに関する質問やサポートが必要な場合は、GitHub Issuesを使用してください。
 
+このライブラリに関する質問やサポートが必要な場合は、GitHub Issuesを使用してください。
