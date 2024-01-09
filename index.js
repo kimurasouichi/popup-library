@@ -20,7 +20,6 @@ export class PopupManager {
     this.numberOfPopups = numberOfPopups;
     this.setupPopups();
     this.setupBackgroundClick();
-    this.setupArrowClicks();
   }
 
   setupPopups() {
